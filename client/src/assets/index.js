@@ -1,4 +1,4 @@
-import createCampaign from './create-campaign.svg';
+import createProject from './create-project.svg';
 import dashboard from './dashboard.svg';
 import logo from './logo.svg';
 import logout from './logout.svg';
@@ -12,10 +12,11 @@ import menu from './menu.svg';
 import money from './money.svg';
 import loader from './loader.svg';
 import profileButton from './profileButton.svg';
+import wallet from './wallet.svg';
 
 export {
   tagType,
-  createCampaign,
+  createProject,
   dashboard,
   logo,
   logout,
@@ -28,4 +29,5 @@ export {
   money,
   loader,
   profileButton,
+  wallet,
 };

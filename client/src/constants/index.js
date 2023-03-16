@@ -1,6 +1,6 @@
 //Este archivo no contiene lógica solamente links de navegación para que los podamos utilizar desde otro archivo
 
-import { createCampaign, dashboard, logout, payment, profile, withdraw } from '../assets';
+import { createProject, dashboard, logout, payment, profile, withdraw } from '../assets';
 
 export const navlinks = [
   {
@@ -10,8 +10,8 @@ export const navlinks = [
   },
   {
     name: 'Projectos',
-    imgUrl: createCampaign,
-    link: '/create-campaign',
+    imgUrl: createProject,
+    link: '/create-project',
   },
   {
     name: 'Contribuye',

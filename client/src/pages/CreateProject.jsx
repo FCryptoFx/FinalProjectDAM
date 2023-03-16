@@ -2,15 +2,16 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { ethers } from 'ethers'; //Esta libreria nos permitirá interactuar con el smart contract
 
-//import { useStateContext } from '../context';
+import { useStateContext } from '../context';
 import { money } from '../assets';
 import { CustomButton, FormField, /*Loader*/ } from '../components';
-//import { checkIfImage } from '../utils';
+import { checkIfImage } from '../utils';
 
 const CreateProject = () => {
 
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
+  const { createProject } = useStateContext(); //Con esto compartimos los datos y funciones a través de toda la página
   const [form, setForm] = useState({
     name: '',
     title: '',
@@ -31,32 +32,32 @@ const CreateProject = () => {
 
     console.log(form);
 
-    /*checkIfImage(form.image, async (exists) => {
+    checkIfImage(form.image, async (exists) => {
       //Comprobamos que la URL sea accesible y que se trate de una imagen
       if(exists) {
         setIsLoading(true) // Cambiamos el setIsLoading a true
-        await createCampaign({ ...form, target: ethers.utils.parseUnits(form.target, 18)}) //Creamos la campaña
+        await createProject({ ...form, target: ethers.utils.parseUnits(form.target, 18)}) // Pasamos el target introducido en el form a WEI
         setIsLoading(false); //Cambiamos setIsLoading a false cuando ya hemos creado la campaña
         navigate('/'); //Navegamos al menú principal de la página
       } else {
         alert('Por favor, inserte una imagen válida :)')
-        setForm({ ...form, image: '' });
+        setForm({ ...form, image: '' }); //Si la imagen no es válida, mostramos una alerta y limpiamos el inputField
       }
-    })*/
+    })
   }
 
   return (
     <div className="bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
     {isLoading && 'Loader...'}
     <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] bg-[#3a3a43] rounded-[10px]">
-        <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Comienza un precioso proyecto 🎉💝</h1>
+        <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Aquí comienza tu proyecto 🎉💝</h1>
       </div>
 
       <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
             labelName="Tu nombre:"
-            placeholder="Pepico Wallace..."
+            placeholder="Quien  ha tenido la maravillosa idea?"
             inputType="text"
             value={form.name}
             handleChange={(e) => handleFormFieldChange('name', e)}
@@ -96,7 +97,7 @@ const CreateProject = () => {
 
         <FormField 
             labelName="Logo del proyecto:"
-            placeholder="Una imagen vale mas que mil palabras..."
+            placeholder="Inserta la URL de una imagen ya que, una imagen vale mas que mil palabras..."
             inputType="url"
             value={form.image}
             handleChange={(e) => handleFormFieldChange('image', e)}
