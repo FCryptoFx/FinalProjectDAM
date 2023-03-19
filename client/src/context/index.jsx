@@ -17,6 +17,7 @@ export const StateContextProvider = ({ children }) => {
     //Conectamos con la wallet del usuario
     const address = useAddress();
     const connect = useMetamask();
+    
 
     //Función para poder publicar proyectos en la blockchain
     const publishProject = async (form) => {
@@ -64,12 +65,14 @@ export const StateContextProvider = ({ children }) => {
       return filteredProjects;
     }
 
+    //Recogemos la cantidad donada a un proyecto
     const donate = async (pId, amount) => {
       const data = await contract.call('contributeToProject', pId, { value: ethers.utils.parseEther(amount)});
   
       return data;
     }
 
+    //Recogemos quien ha donado a que proyecto
     const getDonations = async (pId) => {
       const donations = await contract.call('getContributors', pId);
       const numberOfDonations = donations[0].length;

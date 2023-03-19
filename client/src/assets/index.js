@@ -12,6 +12,8 @@ import money from './money.svg';
 import loader from './loader.svg';
 import profileButton from './profileButton.svg';
 import wallet from './wallet.svg';
+import ethereumLogo from './ethereumLogo.png';
+import Ferran from './Ferran.gif';
 
 export {
   createProject,
@@ -28,4 +30,6 @@ export {
   loader,
   profileButton,
   wallet,
+  ethereumLogo,
+  Ferran,
 };

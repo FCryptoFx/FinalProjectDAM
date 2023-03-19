@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState('Menú Principal');
   const [toggleDrawer, setToggleDrawer] = useState(false);
   const { connect, address } = useStateContext();
-  const [showWalletImage, setShowWalletImage] = useState(false);
+  //const [showWalletImage, setShowWalletImage] = useState(false);
 
   return (
     <div className="flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-6">

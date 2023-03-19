@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 //Importamos las imagenes y las constantes de sus respectivos paquetes para poder usarlos
-import { logo, sun } from '../assets';
+import { logo, logout, sun } from '../assets';
 import { navlinks } from '../constants';
 
 // Esta función va a manejar el comportamiento de los iconos cuando el cursor interactue con ellos, ya sea clickando o pasando por encima
@@ -47,6 +47,7 @@ const Sidebar = () => {
           ))}
           
         </div>
+        <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={logout} />
         <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} />
       </div>
     </div>
