@@ -17,7 +17,7 @@ const PreHome = () => {
         <div className="w-full max-w-screen-md rounded-3xl overflow-hidden">
           <div className="bg-pink-500 bg-opacity-50">
             <div className="pink_gradient" />
-            
+
             <div className="w-full h-96 bg-gray-900 backdrop-blur-md flex flex-col items-center justify-start">
               <img
                 src={ethereumLogo}
@@ -40,21 +40,16 @@ const PreHome = () => {
           <div className="blue_gradient" />
         </div>
 
-        <button className="bg-[#4acd8d] mt-4 hover:bg-[#5be49e] text-white font-bold py-2 px-4 rounded-md">
+        
           <CustomButton
             btnType="button"
-            title={address ? 'Crear un proyecto' : 'Conectar Wallet'}
-            className={`custom-button ${address ? 'bg-green-500 hover:bg-green-600' : 'bg-yellow-500 hover:bg-yellow-600'}`}
-            handleClick={() => {
-              if (address) {
-                navigate('create-project');
-              } else {
-                connect();
+            title= 'Conectar Wallet'
+            styles= 'bg-[#4acd8d] mt-4 hover:bg-[#5be49e] text-white font-bold py-2 px-4 rounded-md'
+            handleClick={() => { 
+              connect();
               }
-            }}
+            }
           />
-        </button>
-
       </div>
     </div>
   );

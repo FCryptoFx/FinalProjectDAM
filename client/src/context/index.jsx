@@ -17,7 +17,6 @@ export const StateContextProvider = ({ children }) => {
     //Conectamos con la wallet del usuario
     const address = useAddress();
     const connect = useMetamask();
-    
 
     //Función para poder publicar proyectos en la blockchain
     const publishProject = async (form) => {
