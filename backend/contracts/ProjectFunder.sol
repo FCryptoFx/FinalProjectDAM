@@ -32,6 +32,7 @@ contract ProjectFunder {
 
         project.owner = _owner;
         project.title = _title;
+        project.description = _description;
         project.target = _target;
         project.deadline = _deadline;
         project.amountCollected = 0;

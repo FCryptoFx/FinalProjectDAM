@@ -39,7 +39,6 @@ const PreHome = () => {
           </div>
           <div className="blue_gradient" />
         </div>
-
         
           <CustomButton
             btnType="button"

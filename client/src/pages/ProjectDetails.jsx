@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { ethers } from 'ethers';
+//import { ethers } from 'ethers';
 
 import { useStateContext } from '../context';
 import { CountBox, CustomButton, Loader } from '../components';
@@ -38,6 +38,7 @@ const ProjectDetails = () => {
     setIsLoading(false);
   }
 
+  console.log("hola: " + (state.description || "No description available"));
   
 
   return (
