@@ -11,7 +11,7 @@ const DisplayProjects = ({ title, isLoading, projects }) => {
 
   //Función para manejar la navegación de los proyectos
   const handleNavigate = (project) =>{
-    navigate(`/project-details/${ project.title }`, { state: project })
+    navigate(`/project-details/${ project.title }`, { state : project })
   }
 
   return (

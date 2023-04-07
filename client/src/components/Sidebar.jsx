@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 //Importamos las imagenes y las constantes de sus respectivos paquetes para poder usarlos
-import { dashboard, logo, logout, sun } from '../assets';
+import { dashboard, logo, spanish, english } from '../assets';
 
 // Esta función va a manejar el comportamiento de los iconos cuando el cursor interactue con ellos, ya sea clickando o pasando por encima
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
@@ -15,11 +15,14 @@ const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
       <img src={imgUrl} alt="fund_logo" className={`w-1/2 h-1/2 ${isActive !== name && 'grayscale'}`} />
     )}
   </div>
-)
-
-//Función para desconectar la billetera de Metamask
+);
 
 const Sidebar = () => {
+  const [isChange, setIsChange] = useState(true);
+
+  const handleClick = () => {
+    setIsChange(!isChange);
+  };
 
   return (
     <div className="flex justify-between items-center flex-col sticky top-5 h-[93vh]"> {/*div que contiene el lógo de la página*/}
@@ -36,7 +39,11 @@ const Sidebar = () => {
           </Link>
 
         </div>
-        <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} />
+        <Icon
+          styles="bg-[#1c1c24] shadow-secondary"
+          imgUrl={isChange ? spanish : english}
+          handleClick={handleClick}
+        />
       </div>
     </div>
   )

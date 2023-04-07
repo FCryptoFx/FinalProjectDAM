@@ -14,6 +14,8 @@ import profileButton from './profileButton.svg';
 import wallet from './wallet.svg';
 import ethereumLogo from './ethereumLogo.png';
 import Ferran from './Ferran.gif';
+import english from './english.svg';
+import spanish from './spanish.svg';
 
 export {
   createProject,
@@ -32,4 +34,6 @@ export {
   wallet,
   ethereumLogo,
   Ferran,
+  english,
+  spanish,
 };

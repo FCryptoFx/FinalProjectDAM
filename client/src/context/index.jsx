@@ -29,8 +29,8 @@ export const StateContextProvider = ({ children }) => {
             new Date(form.deadline).getTime(), //esto nos devuelve el número de segundos que han pasado desde 1970 (JavaScript Rules)
             form.image
           ])
-    
           console.log("La llamada al smart contract ha resultado existosa", data)
+          
         } catch (error) {
           console.log("La llamada al smart contract ha fallado.", error)
         }

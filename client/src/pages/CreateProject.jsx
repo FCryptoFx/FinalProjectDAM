@@ -57,7 +57,7 @@ const CreateProject = () => {
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
             labelName="Tu nombre:"
-            placeholder="Quien  ha tenido la maravillosa idea?"
+            placeholder="Quien ha tenido la maravillosa idea?"
             inputType="text"
             value={form.name}
             handleChange={(e) => handleFormFieldChange('name', e)}
@@ -78,7 +78,7 @@ const CreateProject = () => {
             value={form.description}
             handleChange={(e) => handleFormFieldChange('description', e)}
           />
-
+          
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
             labelName="Objetivo:"
@@ -119,5 +119,4 @@ const CreateProject = () => {
     </div>
   )
 }
-
 export default CreateProject
