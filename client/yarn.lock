@@ -4312,6 +4312,11 @@
   dependencies:
     "is-typedarray" "^1.0.0"
 
+"typeface-quicksand@^1.1.13":
+  "integrity" "sha512-sStzisPEpHfgPDE7EQvaDj9j5kxF56xeJgVc/8F2cchmI1IeuQ5ZE3ufTchSSpKbGRddgjgfWGUyjb7RqtJORA=="
+  "resolved" "https://registry.npmjs.org/typeface-quicksand/-/typeface-quicksand-1.1.13.tgz"
+  "version" "1.1.13"
+
 "uint8arrays@^2.0.5":
   "integrity" "sha512-Q9/hhJa2836nQfEJSZTmr+pg9+cDJS9XEAp7N2Vg5MzL3bK/mkMVfjscRGYruP9jNda6MAdf4QD/y78gSzkp6A=="
   "resolved" "https://registry.npmjs.org/uint8arrays/-/uint8arrays-2.1.10.tgz"

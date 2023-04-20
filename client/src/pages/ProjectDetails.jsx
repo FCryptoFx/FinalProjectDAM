@@ -38,14 +38,15 @@ const ProjectDetails = () => {
     setIsLoading(false);
   }
 
-  console.log("hola: " + (state.description || "No description available"));
-  
+  //console.log("hola: " + (state.description || "No description available"));
 
   return (
     <div>
       {isLoading && <Loader />}
 
-      <div className="w-full flex md:flex-row flex-col mt-10 gap-[30px]">
+      <p className="font-epilogue font-bold text-[25px] text-center text-white uppercase">{state.title}</p>
+
+      <div className="w-full flex md:flex-row flex-col mt-5 gap-[30px]">
         <div className="flex-1 flex-col">
           <img src={state.image} alt="project" className="w-full h-[410px] object-cover rounded-xl"/>
           <div className="relative w-full h-[5px] bg-[#3a3a43] mt-2">
@@ -71,13 +72,17 @@ const ProjectDetails = () => {
                 <img src={profileButton} alt="user" className="w-[60%] h-[60%] object-contain"/>
               </div>
               <div>
+                <a target='_blank' href={`https://goerli.etherscan.io/address/${state.owner}`}>
                 <h4 className="font-epilogue font-semibold text-[14px] text-white break-all">{state.owner}</h4>
+                </a>
               </div>
             </div>
           </div>
 
+          
+
           <div>
-            <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">Historia:</h4>
+            <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">Descripción:</h4>
 
               <div className="mt-[20px]">
                 <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] text-justify">{state.description}</p>
@@ -90,7 +95,7 @@ const ProjectDetails = () => {
               <div className="mt-[20px] flex flex-col gap-4">
                 {donators.length > 0 ? donators.map((item, index) => (
                   <div key={`${item.donator}-${index}`} className="flex justify-between items-center gap-4">
-                    <p className="font-epilogue font-normal text-[16px] text-[#b2b3bd] leading-[26px] break-ll">{index + 1}. <a href={`https://goerli.etherscan.io/address/${item.donator}`}>{item.donator}</a></p>
+                    <p className="font-epilogue font-normal text-[16px] text-[#b2b3bd] leading-[26px] break-ll">{index + 1}. <a target='_blank' href={`https://goerli.etherscan.io/address/${item.donator}`}>{item.donator}</a></p>
                     
                     <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] break-ll">{item.donation} ETH</p>
                   </div>
@@ -117,8 +122,8 @@ const ProjectDetails = () => {
               />
 
               <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px]">
-                <h4 className="font-epilogue font-semibold text-[14px] leading-[22px] text-white">Back it because you believe in it.</h4>
-                <p className="mt-[20px] font-epilogue font-normal leading-[22px] text-[#808191]">Support the project for no reward, just because it speaks to you.</p>
+                <h4 className="font-epilogue font-semibold text-[14px] leading-[22px] text-white">Apóyalo porque crees en él.</h4>
+                <p className="mt-[20px] font-epilogue font-normal leading-[22px] text-[#808191]">Apoya el proyecto sin recompensa, solo porque te motiva.</p>
               </div>
 
               <CustomButton 

@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { loader } from '../assets';
 import FundCard from './FundCard';
 
-
-
 const DisplayProjects = ({ title, isLoading, projects }) => {
   const navigate = useNavigate();
 

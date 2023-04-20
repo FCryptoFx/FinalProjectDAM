@@ -11,7 +11,7 @@ en este caso dentro de este contexto renderizaremos el componente children*/
 export const StateContextProvider = ({ children }) => { 
 
     //Conectamos nuestro smartContract
-    const { contract } = useContract('0x340f00f74c9d5e19e7086316629455f25f348ae3');
+    const { contract } = useContract('0x340F00f74C9d5E19E7086316629455F25f348Ae3');
     const { mutateAsync: createProject } = useContractWrite(contract, 'createProject');
 
     //Conectamos con la wallet del usuario
