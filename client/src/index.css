@@ -13,6 +13,32 @@
   );
 }
 
+.gradient-bg {
+  background: linear-gradient(
+    to bottom,
+    #2a211c 0%,
+    #443c30 5%,
+    #6b5d4d 20%,
+    #928975 35%,
+    #b4a882 50%,
+    #c3b299 65%,
+    #dad3c5 80%,
+    #f7f2e7 95%,
+    #ffffff 100%
+  );
+}
+
+/*.gradient-bg {
+  background: linear-gradient(
+    to top,
+    #d6d6d6,
+    #bfbfbf,
+    #6c6c6c,
+    #464646
+  );
+}*/
+
+
 input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(0.8);
