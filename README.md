@@ -20,7 +20,7 @@ Non-Profit dApp offers the following features:
 
 Non-Profit dApp is built on the Ethereum blockchain using Solidity programming language. The following technologies are used in this project:
 
-- Ethereum blockchain
+- Goërli blockchain (Ethereum testnet)
 - Solidity programming language
 - React framework for building user interface
 - Hardhat framework for smart contract development and testing
