@@ -10,14 +10,14 @@ Web3 dApp is a decentralized application (dApp) built on the blockchain technolo
 Non-Profit dApp offers the following features:
 
 - User registration and login using Metamask wallet
-![PreHome](readmeScreenShots/PreHome.png)
+![PreHome](C:\Users\ferra\Desktop\ProjecteFinal\App\readmeScreenshots\PreHome.PNG)
 
 - Ability to view and contribute to non-profit projects
-![Home](readmeScreenShots/Home.png)
-![ProjectDetails](readmeScreenShots/ProjectDetails.png)
+![Home](C:\Users\ferra\Desktop\ProjecteFinal\App\readmeScreenshots\Home.PNG)
+![ProjectDetails](C:\Users\ferra\Desktop\ProjecteFinal\App\readmeScreenshots\ProjectDetails.PNG)
 
 - Ability to create and submit non-profit projects for funding
-![Create Project](readmeScreenShots/CreateProject.png)
+![Create Project](C:\Users\ferra\Desktop\ProjecteFinal\App\readmeScreenshots\ProjectDetails.PNG)
 
 - Real-time tracking of project funding progress and milestones
 - Transparent reporting of project expenses and updates
