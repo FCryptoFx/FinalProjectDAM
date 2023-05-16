@@ -57,7 +57,7 @@ const ProjectDetails = () => {
 
         <div className="flex md:w-[150px] w-full flex-wrap justify-between gap-[30px]">
           <CountBox title="Días restantes" value={remainingDays} />
-          <CountBox title={`Conseguido ${state.target}`} value={`${state.amountCollected} ETH`} />
+          <CountBox title={`Conseguido ${state.target} ETH`} value={`${state.amountCollected} ETH`} />
           <CountBox title="Contribuciones" value={donators.length} />
         </div>
       </div>
@@ -100,7 +100,7 @@ const ProjectDetails = () => {
                     <p className="font-epilogue font-bold text-[16px] text-[#111111] leading-[26px] break-ll">{item.donation} ETH</p>
                   </div>
                 )) : (
-                  <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] text-justify">Nadie ha contribuido con este proyecto aún. Sé el pionero!</p>
+                  <p className="font-epilogue font-bold text-[22px] text-[#111111] leading-[26px] text-justify">Nadie ha contribuido con este proyecto aún. Sé el pionero!</p>
                 )}
               </div>
           </div>
