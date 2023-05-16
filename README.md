@@ -14,10 +14,10 @@ Non-Profit dApp offers the following features:
 
 - Ability to view and contribute to non-profit projects
 ![Home](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/Home.PNG?raw=true)
-![ProjectDetails](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/CreateProject.PNG?raw=true))
+![ProjectDetails](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/ProjectDetails.PNG?raw=true)(https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/CreateProject.PNG?raw=true)
 
 - Ability to create and submit non-profit projects for funding
-![Create Project](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/ProjectDetails.PNG?raw=true)
+![Create Project](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/CreateProject.PNG?raw=true)
 
 - Real-time tracking of project funding progress and milestones
 - Transparent reporting of project expenses and updates
