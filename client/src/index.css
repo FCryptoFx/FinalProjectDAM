@@ -13,7 +13,8 @@
   );
 }
 
-.gradient-bg {
+/* Brown gradient*/
+/*.gradient-bg {
   background: linear-gradient(
     to bottom,
     #2a211c 0%,
@@ -26,17 +27,25 @@
     #f7f2e7 95%,
     #ffffff 100%
   );
+}*/
+
+/* Grey gradient */
+.gradient-bg {
+  background: linear-gradient(
+    to bottom,
+    #111111 0%,
+    #222222 5%,
+    #333333 20%,
+    #444444 35%,
+    #555555 50%,
+    #666666 65%,
+    #777777 80%,
+    #888888 95%,
+    #999999 100%
+  );
 }
 
-/*.gradient-bg {
-  background: linear-gradient(
-    to top,
-    #d6d6d6,
-    #bfbfbf,
-    #6c6c6c,
-    #464646
-  );
-}*/
+
 
 
 input[type="date"]::-webkit-calendar-picker-indicator {
