@@ -28,7 +28,7 @@ contract ProjectFunder {
         /*Comprobación de que la fecha limite elegid es posterior al momento actual.
         block.timestamp hace referencia al tiempo en ese momento, por lo tanto si el project.deadline 
         es anterior a esto enviaremos un mensaje de error*/
-        require(project.deadline < block.timestamp, "The deadline should be a date in the future!!"); 
+        require(project.deadline < block.timestamp, "La fecha limite debe ser una fecha en el futuro!"); 
 
         project.owner = _owner;
         project.title = _title;

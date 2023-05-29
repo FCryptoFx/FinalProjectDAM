@@ -85,7 +85,7 @@ const ProjectDetails = () => {
             <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">Descripción:</h4>
 
               <div className="mt-[20px]">
-                <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] text-justify">{state.description}</p>
+                <p className="font-epilogue font-bold text-[16px] text-[#2c2f32] leading-[26px] text-justify">{state.description}</p>
               </div>
           </div>
 
@@ -107,10 +107,10 @@ const ProjectDetails = () => {
         </div>
 
         <div className="flex-1">
-          <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">Contribuye</h4>   
+          <h4 className="font-epilogue text-center font-semibold text-[30px] text-white uppercase">🧸Contribuye🧸</h4>   
 
           <div className="mt-[20px] flex flex-col p-4 bg-[#1c1c24] rounded-[10px]">
-            <p className="font-epilogue fount-medium text-[20px] leading-[30px] text-center text-[#808191]">Contribuye con este proyecto</p>
+            
             <div className="mt-[30px]">
               <input 
                 type="number"
