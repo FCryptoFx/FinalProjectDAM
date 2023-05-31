@@ -23,7 +23,7 @@ const Profile = () => {
   
   return (
     <DisplayProjects 
-      title="Estos son todos tus proyectos🧸"
+      title="TUS PROYECTOS🧸"
       isLoading={isLoading}
       projects={projects}
     />
