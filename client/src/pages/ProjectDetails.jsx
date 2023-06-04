@@ -79,8 +79,6 @@ const ProjectDetails = () => {
             </div>
           </div>
 
-          
-
           <div>
             <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">Descripción:</h4>
 

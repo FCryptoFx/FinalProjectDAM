@@ -16,6 +16,7 @@ import ethereumLogo from './ethereumLogo.png';
 import Ferran from './Ferran.gif';
 import english from './english.svg';
 import spanish from './spanish.svg';
+import misProyectos from './misProyectos.svg';
 
 export {
   createProject,
@@ -36,4 +37,5 @@ export {
   Ferran,
   english,
   spanish,
+  misProyectos,
 };

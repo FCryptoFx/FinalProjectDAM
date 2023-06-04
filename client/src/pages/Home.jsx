@@ -19,6 +19,7 @@ const Home = () => {
   useEffect(() => {
     if(contract) fetchProjects();
   }, [address, contract]);
+
   
   return (
 

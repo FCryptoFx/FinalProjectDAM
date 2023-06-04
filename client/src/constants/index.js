@@ -1,6 +1,6 @@
 //Este archivo no contiene lógica solamente links de navegación para que los podamos utilizar desde otro archivo
 
-import { dashboard } from '../assets';
+import { dashboard, misProyectos } from '../assets';
 
 export const navlinks = [
   {
@@ -8,4 +8,9 @@ export const navlinks = [
     imgUrl: dashboard,
     link: '/',
   },
+  {
+    name: 'Mis proyectos',
+    imgUrl: misProyectos,
+    link: '/profile',
+  }
 ];

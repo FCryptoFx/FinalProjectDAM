@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 //Importamos las imagenes y las constantes de sus respectivos paquetes para poder usarlos
-import { dashboard, logo, spanish, english } from '../assets';
+import { dashboard, misProyectos, logo, spanish, english } from '../assets';
 
 // Esta función va a manejar el comportamiento de los iconos cuando el cursor interactue con ellos, ya sea clickando o pasando por encima
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
@@ -36,6 +36,9 @@ const Sidebar = () => {
 
           <Link to='/'>
             <Icon imgUrl={dashboard} />
+          </Link>
+          <Link to='/profile'>
+            <Icon imgUrl={misProyectos} />
           </Link>
 
         </div>
