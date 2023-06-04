@@ -10,14 +10,14 @@ Web3 dApp is a decentralized application (dApp) built on the blockchain technolo
 Non-Profit dApp offers the following features:
 
 - User registration and login using Metamask wallet
-![PreHome](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/PreHome.PNG?raw=true)
+![PreHome](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/img/PreHome.PNG)
 
 - Ability to view and contribute to non-profit projects
-![Home](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/Home.PNG?raw=true)
-![ProjectDetails](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/ProjectDetails.PNG?raw=true)
+![Home](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/img/Home.PNG)
+![ProjectDetails](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/img/ProjectDetails.PNG)
 
 - Ability to create and submit non-profit projects for funding
-![Create Project](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/readmeScreenshots/CreateProject.PNG?raw=true)
+![Create Project](https://github.com/FCryptoFx/FinalProjectDAM/blob/main/img/CreateProject.PNG)
 
 - Real-time tracking of project funding progress and milestones
 - Transparent reporting of project expenses and updates
