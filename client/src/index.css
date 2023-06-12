@@ -30,7 +30,7 @@
 }*/
 
 /* Grey gradient */
-.gradient-bg {
+/*.gradient-bg {
   background: linear-gradient(
     to bottom,
     #111111 0%,
@@ -43,8 +43,11 @@
     #888888 95%,
     #999999 100%
   );
-}
+}*/
 
+.gradient-bg {
+  background: #4d3b3a
+}
 
 
 
